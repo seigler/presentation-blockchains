@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Janus Presentation Framework</title>
+    <link rel="stylesheet" href="styles/main.css" charset="utf-8">
+    <link rel="stylesheet" href="styles/blockchain.css" charset="utf-8">
+  </head>
+  <body class="is-loading">
+    <nav>
+      <label for="commandField">Command:</label>
+      <input list="commands" type="text" id="commandField" autocomplete="off" pattern="[0-9]+|[spc]">
+      <ul class="help">
+        <li>
+          <strong>#</strong> - jump to a slide item
+        </li>
+        <li>
+          <strong>s</strong> - toggle projector simulation
+        </li>
+        <li>
+          <strong>p</strong> - toggle presenter mode
+        </li>
+        <li>
+          <strong>c</strong> - clone window
+        </li>
+      </ul>
+    </nav>
+    <main>
+
+      <section class="row title-page">
+        <div class="col">
+          <img src="styles/blocks.jpg" alt="" class="cover">
+          <h1 style="background-color: black; color: white; display: inline-block; align-self: flex-end;">Block</h1>
+        </div>
+        <div class="col">
+          <img src="styles/chains.jpg" alt="" class="cover">
+          <h1 style="background-color: white; color: black; display: inline-block; align-self: flex-start;">Chain</h1>
+        </div>
+      </section>
+
+      <section class="hashpointers">
+        <img src="styles/linked-list.svg" alt="" class="contain" style="object-position: 70% 50%">
+        <img janus-timeline src="styles/linked-list-hashpointers.svg" alt="" class="contain" style="object-position: 70% 50%">
+        <h1>Hash Pointers</h1>
+      </section>
+
+      <section class="credits">
+        <h1>Credits</h1>
+        <div>
+          <a href="https://www.flickr.com/photos/stevendepolo/5644838033/"><img src="styles/blocks.jpg" alt="" class="thumbnail">Steven Depolo, Flickr</a>
+          <a href="https://pixabay.com/en/chain-rust-past-bondage-history-232930/"><img src="styles/chains.jpg" alt="" class="thumbnail">Pixabay</a>
+        </div>
+      </section>
+
+    </main>
+    <script type="text/javascript" src="libs/openjs-shortcut/shortcut.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "inliner index.html > presentation-bundle.html",
+    "start": "http-server -o -cors"
+  },
+  "author": "Joshua Seigler",
+  "devDependencies": {
+    "inliner": "^1.9.5"
+  },
+  "dependencies": {
+    "http-server": "^0.9.0"
+  }
+}

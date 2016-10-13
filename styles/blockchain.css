@@ -1,0 +1,42 @@
+.credits > a {
+  display: block;
+}
+
+img.thumbnail {
+  height: 1em;
+}
+
+.row, .col {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.row > div, .col > div {
+  position: relative;
+  justify-content: center;
+}
+
+.title-page h1 {
+  font-size: 2em;
+  padding: 0.25em;
+  text-transform: uppercase;
+}
+
+.credits {
+  padding: 0.5em;
+  text-align: left;
+  justify-content: flex-start;
+}
+.credits > div > a {
+  display: block;
+  font-size: 0.75em;
+}
