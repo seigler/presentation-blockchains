@@ -102,8 +102,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="312.59118"
-     inkscape:cy="188.78368"
+     inkscape:cx="206.16261"
+     inkscape:cy="195.21225"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -125,7 +125,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -134,25 +134,6 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-209.7363,42.325432)">
-    <g
-       transform="translate(95.86584,0.50657535)"
-       id="g4197">
-      <path
-         inkscape:connector-curvature="0"
-         id="path4183"
-         d="M 365.29978,15.232822 A 15.152288,15.152288 0 0 1 350.14749,30.385111 15.152288,15.152288 0 0 1 334.9952,15.232822 15.152288,15.152288 0 0 1 350.14749,0.08053398 15.152288,15.152288 0 0 1 365.29978,15.232822 Z"
-         style="opacity:1;fill:#7f7fff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:3.00000024;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <g
-         id="text4184-3"
-         style="font-style:normal;font-weight:normal;font-size:44.98179626px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         transform="matrix(0.52285653,0,0,0.52285653,212.38885,-12.341957)">
-        <path
-           style="fill:#ffffff;fill-opacity:1"
-           id="path4189-6"
-           d="m 270.38073,49.23549 -1.29586,6.830732 5.97414,0 0,2.965109 -6.56717,0 -1.5155,7.92892 -3.16278,0 1.55943,-7.92892 -6.25967,0 -1.53747,7.92892 -3.09689,0 1.44961,-7.92892 -5.60076,0 0,-2.965109 6.17182,0 1.36175,-6.830732 -5.90825,0 0,-2.943145 6.43538,0 1.49354,-7.775173 3.16278,0 -1.47157,7.775173 6.3036,0 1.5155,-7.775173 3.09689,0 -1.5155,7.775173 5.64469,0 0,2.943145 -6.23771,0 z m -10.71832,6.830732 6.28164,0 1.31782,-6.830732 -6.25967,0 -1.33979,6.830732 z"
-           inkscape:connector-curvature="0" />
-      </g>
-    </g>
     <g
        transform="translate(244.74038,11.519724)"
        id="g4197-3">

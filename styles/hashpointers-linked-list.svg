@@ -102,7 +102,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="171.16261"
+     inkscape:cx="39.734039"
      inkscape:cy="195.21225"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -125,7 +125,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -134,11 +134,6 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-209.7363,42.325432)">
-    <path
-       id="path4138"
-       style="fill:#ff9800;fill-opacity:1;fill-rule:evenodd;stroke:#777777;stroke-width:3.00000024;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 383.17465,16.639669 20.4364,39.494509 m -82.56746,-7.90114 78.05284,-40.3883942 20.89055,40.3721642 -78.05284,40.388391 z"
-       inkscape:connector-curvature="0" />
     <path
        inkscape:connector-curvature="0"
        id="path4138-7"
@@ -166,11 +161,6 @@
        id="path4138-9"
        style="fill:#ff9800;fill-opacity:1;fill-rule:evenodd;stroke:#777777;stroke-width:3.00000024;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 363.20585,275.55971 26.52258,-35.69334 m 29.12875,77.66163 -70.54062,-52.41649 27.11199,-36.48654 70.54062,52.41649 z" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:3.00000024;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
-       d="M 397.85715,27.362198 514.28572,3.7907698"
-       id="path4206"
-       inkscape:connector-curvature="0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:3.00000024;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend-1)"
        d="M 561.30679,3.1834788 655.06791,76.122328"
