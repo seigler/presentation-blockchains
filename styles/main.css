@@ -162,10 +162,12 @@ main {
 }
 
 .row, .col {
+  position: relative;
   display: flex;
   flex-grow: 1;
   flex-basis: 0;
   align-items: stretch;
+  justify-content: center;
 }
 
 .row--shrink, .col--shrink {
@@ -235,6 +237,8 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   margin: 0;

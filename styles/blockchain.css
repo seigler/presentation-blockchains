@@ -9,8 +9,7 @@
   text-align: left;
   justify-content: flex-start;
 }
-.credits > div > a {
-  display: block;
+.credits ul {
   font-size: 0.75em;
   line-height: 1.2;
 }
