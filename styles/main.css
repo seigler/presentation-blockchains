@@ -500,3 +500,26 @@ body.show-notes section[janus-timeline='present'] + section[janus-timeline='futu
   outline: 0.2rem solid white;
   z-index: 3;
 }
+
+table.yesnomaybe {
+  border: 0px solid transparent;
+  border-width: 3em 2.5em 0 0;
+  text-shadow: 0 0 1em black, 0 0 1.5em black;
+  margin: auto auto 5% auto;
+}
+
+table.yesnomaybe .yes, table.yesnomaybe .no, table.yesnomaybe .maybe {
+  width: 1em;
+  background-size: auto 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+table.yesnomaybe .yes {
+  background-image: url(../libs/svg/2705.svg);
+}
+table.yesnomaybe .no {
+  background-image: url(../libs/svg/274e.svg);
+}
+table.yesnomaybe .maybe {
+  background-image: url(../libs/svg/2753.svg);
+}
