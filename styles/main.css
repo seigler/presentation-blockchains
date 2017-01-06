@@ -231,6 +231,28 @@ ul.help li {
   padding: 0 0.5em;
 }
 
+table {
+  margin: 0 auto;
+}
+
+th, td {
+  text-align: center;
+}
+
+thead th div {
+  white-space: nowrap;
+  width: 1.5em;
+  height: 1em;
+  line-height: 0.9;
+  text-align: left;
+  transform-origin: left bottom;
+  transform: translateX(1.3em) rotate(-60deg);
+}
+
+tbody th {
+  text-align: right;
+}
+
 section {
   position: absolute;
   z-index: 1;
@@ -418,8 +440,11 @@ section[janus-timeline='future'] {
   pointer-events: none;
 }
 
-img.cover, img.contain {
+.cover, .contain {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   top: 0;
   left: 0;
   height: 100%;
@@ -427,10 +452,10 @@ img.cover, img.contain {
   z-index: -1;
   transform: none;
 }
-img.cover {
+.cover {
   object-fit: cover;
 }
-img.contain {
+.contain {
   object-fit: contain;
 }
 
