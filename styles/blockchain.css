@@ -13,3 +13,25 @@
   font-size: 0.75em;
   line-height: 1.2;
 }
+
+table.yesnomaybe {
+  border: 0px solid transparent;
+  border-width: 3em 2.5em 0 0;
+  margin: auto auto 5% auto;
+}
+
+table.yesnomaybe .yes, table.yesnomaybe .no, table.yesnomaybe .maybe {
+  width: 1em;
+  background-size: auto 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+table.yesnomaybe .yes {
+  background-image: url(../libs/svg/2705.svg);
+}
+table.yesnomaybe .no {
+  background-image: url(../libs/svg/274e.svg);
+}
+table.yesnomaybe .maybe {
+  background-image: url(../libs/svg/2753.svg);
+}

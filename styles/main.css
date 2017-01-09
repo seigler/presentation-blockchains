@@ -1,5 +1,7 @@
 /* Basics */
 
+@import url(./fonts/merriweather/font.css);
+
 *, *:before, *:after {
   box-sizing: inherit;
   margin: 0;
@@ -7,7 +9,7 @@
 }
 
 :root {
-  --main-font: sans-serif;
+  --main-font: merriweather_sans, sans-serif;
   --monospace-font: monospace;
   --mouse-x: 0.5;
 
@@ -127,7 +129,7 @@ body {
   margin: 0;
   background-color: black;
   color: white;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -251,6 +253,18 @@ thead th div {
 
 tbody th {
   text-align: right;
+  padding-right: 0.5em;
+}
+
+tbody tr, tbody td {
+  text-align: inherit;
+}
+
+hr {
+  width: 80%;
+  margin: 0.25rem auto;
+  border: 1px solid white;
+  border-width: 1px 0;
 }
 
 section {
@@ -428,6 +442,11 @@ section[janus-timeline='past'], body:not(.show-notes) [janus-timeline='past'][ja
   z-index: 2;
 }
 
+[janus-timeline='past'][janus-past='hidden'] {
+  opacity: 0;
+  visibility: hidden;
+}
+
 section[janus-timeline='present'] {
   transform: none;
   opacity: 1;
@@ -476,16 +495,17 @@ body.show-notes section[janus-timeline='present'] {
 .notes {
   display: none;
   white-space: pre-line;
-}
-body.show-notes section[janus-timeline='present'] > .notes {
-  display: block;
   position: absolute;
+  top: 0.2rem;
   left: 100%;
   width: 33.33%;
   height: 100%;
   font-size: 0.5rem;
   text-align: left;
   padding-left: 0.5em;
+}
+body.show-notes section[janus-timeline='present'] > .notes {
+  display: block;
 }
 
 body.show-notes section[janus-timeline='present'] + section[janus-timeline='future'] {
@@ -499,27 +519,4 @@ body.show-notes section[janus-timeline='present'] + section[janus-timeline='futu
   visibility: visible;
   outline: 0.2rem solid white;
   z-index: 3;
-}
-
-table.yesnomaybe {
-  border: 0px solid transparent;
-  border-width: 3em 2.5em 0 0;
-  text-shadow: 0 0 1em black, 0 0 1.5em black;
-  margin: auto auto 5% auto;
-}
-
-table.yesnomaybe .yes, table.yesnomaybe .no, table.yesnomaybe .maybe {
-  width: 1em;
-  background-size: auto 80%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-table.yesnomaybe .yes {
-  background-image: url(../libs/svg/2705.svg);
-}
-table.yesnomaybe .no {
-  background-image: url(../libs/svg/274e.svg);
-}
-table.yesnomaybe .maybe {
-  background-image: url(../libs/svg/2753.svg);
 }
