@@ -41,7 +41,7 @@
       </section>
 
       <section>
-        <img src="styles/bitcoin.svg" alt="" class="contain">
+        <img src="styles/bitcoin.svg" style="height: 50vmin; width: 50vmin; margin: auto;" alt="">
         <div class="notes">Bitcoin was started on October 31, 2008. Open-sourced Jan 3, 2009. Creator pseudonym Satoshi Nakamoto.
         Technically not first cryptocurrency, DigiCash came in 1990.
         First <em>decentralized</em> virtual currency.</div>
@@ -167,9 +167,11 @@
 
       <section>
         <h1>How could we make<br><em>digital</em> currency?</h1>
-        <img src="styles/heath.png" alt="" janus-timeline janus-past="hidden" style="position: absolute; height: 60vh; bottom: -5vh; right: 0; transform: rotate(-30deg)">
+        <div class="cover" janus-timeline janus-future="down" janus-past="down">
+          <img src="styles/heath.png" alt="" style="position: absolute; height: 60vh; bottom: -5vh; right: 0; transform: rotate(-30deg)">
+        </div>
         <div janus-timeline></div>
-        <div class="notes">If I send you a file, I still have the file. Digital items can be duplicated; how can I send you something the way I do in the physical world? The Yapanese people had the right idea: use a ledger.</div>
+        <div class="notes">Digital items can be duplicated; how can I send you something the way I do in the physical world? The Yapanese people had the right idea: use a ledger.</div>
       </section>
 
       <section>
@@ -195,15 +197,16 @@
             </tr>
           </tbody>
         </table>
-        <div class="notes">We can use a ledger to keep track of how much money each person has. If I want to send money, we reduce my account and increase someone else's account.
-        This is similar to how Paypal works at a simple level.
-        Problems:
-        Everyone has to trust whoever maintains the ledger, since they can monitor it and change it.</div>
+        <div class="notes">Ledger keeps track each person's money.
+        To send money, reduce my account and increase their account.
+        Like Paypal.
+
+        BUT - requires trust</div>
       </section>
 
       <section>
         <img src="styles/padlock.jpg" alt="" class="cover">
-        <h1 style="color: #f7931a; font-weight: 900; text-shadow: 0 0 2em black, 0 0 1em black">Cryptography</h1>
+        <h1 style="color: #f7931a; font-weight: 900; text-shadow: 0 0 2em black; -webkit-text-stroke: 0.025em white">Cryptography</h1>
         <div class="notes">We can use public and private keys to control balances in an anonymous ledger.</div>
       </section>
 
@@ -265,7 +268,10 @@
       </section>
 
       <section>
-
+        <h1>Double Spending</h1>
+        <div class="notes">Real world, double spending is easy.
+        Two checks
+        First deposit "wins"</div>
       </section>
 
       <section>
@@ -313,11 +319,6 @@
       </section>
 
       <section>
-        <img src="styles/make-it-real.png" alt="" class="contain">
-        <h1 style="background: linear-gradient(to bottom, black, rgba(0,0,0,0)); padding: 0.25em 0 1em; margin-bottom: auto">How to Make It Real</h1>
-      </section>
-
-      <section>
         <h1>Payment Infrastructure</h1>
       </section>
 
@@ -343,7 +344,8 @@
           <li><a href="https://commons.wikimedia.org/w/index.php?curid=161923"><img src="styles/Yap_Stone_Money.jpg" alt="" class="thumbnail">Eric Guinther, English Wikipedia</a></li>
           <li><a href="https://www.flickr.com/photos/ishtaure-dawn/14297543026"><img src="styles/seashells.jpg" alt="" class="thumbnail">Ishataure Dawn, Flickr</a></li>
 <!--          <li><a href="https://www.flickr.com/photos/68751915@N05/6710868859"><img src="styles/giftcards.jpg" alt="" class="thumbnail">401(K) 2010, Flickr</a></li>-->
-          <li><a href="https://commons.wikimedia.org/wiki/File:The_Velveteen_Rabbit_pg_37.jpg"><img src="styles/make-it-real.png" alt="" class="thumbnail">Velveteen Rabbit, Margery Williams 1922</a></li>
+          <li><a href="https://www.flickr.com/photos/imtfi/5875765289"><img src="styles/money-transaction.jpg" alt="" class="thumbnail">Institute for Money, Technology and Financial Inclusion, Flickr</a></li>
+<!--          <li><a href="https://commons.wikimedia.org/wiki/File:The_Velveteen_Rabbit_pg_37.jpg"><img src="styles/make-it-real.png" alt="" class="thumbnail">Velveteen Rabbit, Margery Williams 1922</a></li>-->
           <li><a href="https://www.flickr.com/photos/ammichaels/7159593410"><img src="styles/hashbrowns.jpg" alt="" class="thumbnail">cheeseslave, Flickr</a></li>
           <li>Emoji art supplied by <a href="http://emojione.com/">EmojiOne</li>
         </ul>
