@@ -51,17 +51,20 @@
         <img src="styles/cat-money.jpg" alt="" class="cover">
         <div class="cover" style="background-color: rgba(0, 0, 0, 0.6)">
           <h1>What is money?</h1>
+          <li>
+            <ul janus-timeline janus-future="down">Durable</ul>
+            <ul janus-timeline janus-future="down">Portable</ul>
+            <ul janus-timeline janus-future="down">Fungible</ul>
+            <ul janus-timeline janus-future="down">Divisible</ul>
+            <ul janus-timeline janus-future="down">Scarce</ul>
+          </li>
         </div>
         <div class="notes">
         Medium of exchange: portable, durable, fungible
         Unit of account: divisible, fungible
         Store of value: durable, scarce, fungible
 
-        Durable
-        Portable
-        Divisible
-        Fungible
-        Scarce</div>
+        Next: things we've used as money</div>
       </section>
 
       <section>
@@ -86,7 +89,9 @@
             </tr>
           </tbody>
         </table>
-        <div class="notes">Used on most continents, still a legal currency in Papua New Guinea alongside their paper money.</div>
+        <div class="notes">Shells
+          Used on most continents.
+          Still a legal currency in Papua New Guinea alongside their paper money.</div>
       </section>
 
       <section>
@@ -112,7 +117,11 @@
           </tbody>
         </table>
 
-        <div class="notes">Stone money was made in Micronesia and Guam, transported to the island of <em>Yap</em> as currency. Value from the story of how hard it was to transport. Ownership transferred by oral history, stones not moved.</div>
+        <div class="notes">Stone money
+          Made in Micronesia and Guam
+          Transported to the island of <em>Yap</em> as currency.
+          Value from the story of how hard it was to transport.
+          Ownership transferred by oral history, stones not moved.</div>
       </section>
 
       <section>
@@ -127,7 +136,7 @@
               <th>Portable</th><td class="yes"></td>
             </tr>
             <tr>
-              <th>Divisible</th><td class="maybe"></td>
+              <th>Divisible</th><td class="yes"></td>
             </tr>
             <tr>
               <th>Fungible</th><td class="yes"></td>
@@ -137,7 +146,10 @@
             </tr>
           </tbody>
         </table>
-        <div class="notes">Pretty popular. Still used today.</div>
+        <div class="notes">
+          Gold (and silver).
+          Pretty popular.
+          Still used today.</div>
       </section>
 
       <section>
@@ -162,7 +174,8 @@
             </tr>
           </tbody>
         </table>
-        <div class="notes">Used to be a currency form of gold and silver, after World War 1 pretty much everybody decided to switch to unbacked "floating money" so they could fuel government expenses with inflation.</div>
+        <div class="notes">US dollars
+          Used to represent gold and silver, after World War 1 pretty much everybody decided to switch to unbacked "floating money" so they could fuel government expenses with inflation.</div>
       </section>
 
       <section>
@@ -180,12 +193,12 @@
             <tr>
               <th>Joshua</th>
               <td>25</td>
-              <td><span janus-timeline style="color: #F00;">&nbsp;- 15</span></td>
+              <td><div janus-timeline janus-future="right" style="color: #F00;">&nbsp;- 15</div></td>
             </tr>
             <tr>
               <th>Jack</th>
               <td>12</td>
-              <td><span janus-timeline style="color: #090;">&nbsp;+ 15</span></td>
+              <td><div janus-timeline janus-future="right" style="color: #090;">&nbsp;+ 15</div></td>
             </tr>
             <tr>
               <th>Dave</th>
@@ -197,7 +210,7 @@
             </tr>
           </tbody>
         </table>
-        <div class="notes">Ledger keeps track each person's money.
+        <div class="notes">A ledger keeps track each person's money.
         To send money, reduce my account and increase their account.
         Like Paypal.
 
@@ -216,7 +229,7 @@
             <tr>
               <th><code>1D4FA353C82B4</code></th>
               <td>11.5</td>
-              <td><span janus-timeline style="color: #F00;">&nbsp;- 11</span></td>
+              <td><div janus-timeline janus-future="right" style="color: #F00;">&nbsp;- 11</div></td>
             </tr>
             <tr>
               <th><code>37563EA8932FB</code></th>
@@ -229,7 +242,7 @@
             <tr>
               <th><code>D15F73E98432A</code></th>
               <td>13.5</td>
-              <td><span janus-timeline style="color: #F00;">&nbsp;- 4</span></td>
+              <td><div janus-timeline janus-future="right" style="color: #F00;">&nbsp;- 4</div></td>
             </tr>
             <tr>
               <th><code>333BCBA13A54C</code></th>
@@ -242,7 +255,7 @@
             <tr>
               <th><code>C5F83ED13497A</code></th>
               <td>6.0</td>
-              <td><span janus-timeline style="color: #090;">&nbsp;+ 15</span></td>
+              <td><div janus-timeline janus-future="right" style="color: #090;">&nbsp;+ 15</div></td>
             </tr>
             <tr>
               <th><code>92A1E683111A2</code></th>
@@ -255,6 +268,8 @@
 
       <section>
         <img src="styles/headstone.svg" style="height: 60vh; margin: 0.5em auto 0" alt="">
+        <img src="styles/grass-back.svg" style="position: absolute; z-index: -1; width: 100%; top: 60vh">
+        <img src="styles/grass-front.svg" style="position: absolute; width: 100%; top: 66vh">
         <div class="notes">There's a company that actually did this, called DigiCash. they maintained a ledger with cryptographically controlled balances. Consumers weren't concerned enough about security or privacy and they ran out of money.</div>
       </section>
 
@@ -271,7 +286,10 @@
         <h1>Double Spending</h1>
         <div class="notes">Real world, double spending is easy.
         Two checks
-        First deposit "wins"</div>
+        First deposit "wins"
+        All about timing
+
+        How do you fix this?</div>
       </section>
 
       <section>
@@ -279,15 +297,15 @@
         <h1 style="color: black">Hashes</h1>
       </section>
 
+      <section>
+        <h1>Proof of Work</h1>
+      </section>
+
       <section class="hashpointers">
         <img janus-timeline janus-future="big" src="styles/hashpointers-linked-list.svg" alt="" class="contain" style="object-position: 70% 50%">
         <img janus-timeline janus-future="big" src="styles/hashpointers-hashes.svg" alt="" class="contain" style="object-position: 70% 50%">
-        <img janus-timeline janus-future="big" src="styles/hashpointers-new-entry.svg" alt="" class="contain" style="object-position: 70% 50%">
+        <img janus-timeline janus-future="left" src="styles/hashpointers-new-entry.svg" alt="" class="contain" style="object-position: 70% 50%">
         <h1>Hash Pointers</h1>
-      </section>
-
-      <section>
-        <h1>Proof of Work</h1>
       </section>
 
       <section>
@@ -347,7 +365,7 @@
           <li><a href="https://www.flickr.com/photos/imtfi/5875765289"><img src="styles/money-transaction.jpg" alt="" class="thumbnail">Institute for Money, Technology and Financial Inclusion, Flickr</a></li>
 <!--          <li><a href="https://commons.wikimedia.org/wiki/File:The_Velveteen_Rabbit_pg_37.jpg"><img src="styles/make-it-real.png" alt="" class="thumbnail">Velveteen Rabbit, Margery Williams 1922</a></li>-->
           <li><a href="https://www.flickr.com/photos/ammichaels/7159593410"><img src="styles/hashbrowns.jpg" alt="" class="thumbnail">cheeseslave, Flickr</a></li>
-          <li>Emoji art supplied by <a href="http://emojione.com/">EmojiOne</li>
+          <li>Emoji art supplied by <a href="http://emojione.com/">EmojiOne</a></li>
         </ul>
       </section>
 

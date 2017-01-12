@@ -421,6 +421,7 @@ section {
 }
 
 [janus-timeline='future'] {
+  transition: transform ease 0.5s, opacity ease 0.5s, visibility step-end 0.5s;
   opacity: 0;
   visibility: hidden;
 }
@@ -435,7 +436,7 @@ body.show-notes section[janus-timeline='future'] [janus-timeline='future'] {
 }
 
 body:not(.show-notes) [janus-timeline='past'][janus-past='down'], body:not(.show-notes) [janus-timeline='future'][janus-future='down'] {
-  transform: translate3d(0, 101vh, 0);
+  transform: translate3d(0, 100vh, 0);
   opacity: 1;
   visibility: hidden;
   pointer-events: none;
@@ -443,7 +444,7 @@ body:not(.show-notes) [janus-timeline='past'][janus-past='down'], body:not(.show
 }
 
 body:not(.show-notes) [janus-timeline='past'][janus-past='left'], body:not(.show-notes) [janus-timeline='future'][janus-future='left'] {
-  transform: translate3d(-101vw, 0, 0);
+  transform: translate3d(-100vw, 0, 0);
   opacity: 1;
   visibility: hidden;
   pointer-events: none;
@@ -451,15 +452,16 @@ body:not(.show-notes) [janus-timeline='past'][janus-past='left'], body:not(.show
 }
 
 body:not(.show-notes) [janus-timeline='past'][janus-past='right'], body:not(.show-notes) [janus-timeline='future'][janus-future='right'] {
-  transform: translate3d(101vw, 0, 0);
+  transform: translate3d(100vw, 0, 0);
   opacity: 1;
   visibility: hidden;
   pointer-events: none;
   z-index: 2;
 }
 
-section[janus-timeline='past'], body:not(.show-notes) [janus-timeline='past'][janus-past='big'], body:not(.show-notes) [janus-timeline='future'][janus-future='big'] {
-  transform: translate3d(0, 0, 0) scale(5);
+section[janus-timeline='past'], /* default past-tense state */
+body:not(.show-notes) [janus-timeline='past'][janus-past='big'], body:not(.show-notes) [janus-timeline='future'][janus-future='big'] {
+  transform: translate3d(0, 5vmin, 0) scale(1.25);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -476,7 +478,8 @@ section[janus-timeline='present'] {
   opacity: 1;
 }
 
-section[janus-timeline='future'] {
+section[janus-timeline='future'], /* default future-tense state */
+body:not(.show-notes) [janus-timeline='past'][janus-past='small'], body:not(.show-notes) [janus-timeline='future'][janus-future='small'] {
   transform: translate3d(0, -5vmin, 0) scale(0.8);
   opacity: 0;
   visibility: hidden;
