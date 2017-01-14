@@ -42,27 +42,57 @@
 
       <section>
         <img src="styles/bitcoin.svg" style="height: 50vmin; width: 50vmin; margin: auto;" alt="">
-        <div class="notes">Bitcoin was started on October 31, 2008. Open-sourced Jan 3, 2009. Creator pseudonym Satoshi Nakamoto.
-        Technically not first cryptocurrency, DigiCash came in 1990.
+        <div class="notes">Bitcoin was started in late 2008. Open-sourced January 2009.
+        Creator pseudonym Satoshi Nakamoto.
         First <em>decentralized</em> virtual currency.</div>
       </section>
 
       <section>
         <img src="styles/cat-money.jpg" alt="" class="cover">
         <div class="cover" style="background-color: rgba(0, 0, 0, 0.6)">
-          <h1>What is money?</h1>
+          <h1 style="background-color: #0A0;" class="highlighted">What is money?</h1>
+<!--
           <li>
             <ul janus-timeline janus-future="down">Durable</ul>
             <ul janus-timeline janus-future="down">Portable</ul>
             <ul janus-timeline janus-future="down">Fungible</ul>
             <ul janus-timeline janus-future="down">Divisible</ul>
             <ul janus-timeline janus-future="down">Scarce</ul>
+            <ul janus-timeline janus-future="down">Acceptable</ul>
           </li>
+-->
+<!--
+          <table class="yesnomaybe" style="font-size: 6vh; border-width: 1.5em 1em 0 0; margin: auto;">
+            <thead>
+              <tr>
+                <th></th>
+                <th><div>Durable</div></th>
+                <th><div>Portable</div></th>
+                <th><div>Divisible</div></th>
+                <th><div>Fungible</div></th>
+                <th><div>Scarce</div></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Medium of<br>Exchange</th><td class="yes"></td><td class="yes"></td><td></td><td class="yes"></td><td></td>
+              </tr>
+              <tr>
+                <th>Unit of<br>Account</th><td></td><td></td><td class="yes"></td><td class="yes"></td><td></td>
+              </tr>
+              <tr>
+                <th>Store of<br>Value</th><td></td><td></td><td></td><td class="yes"></td><td class="yes"></td>
+              </tr>
+            </tbody>
+          </table>
+-->
         </div>
         <div class="notes">
         Medium of exchange: portable, durable, fungible
         Unit of account: divisible, fungible
         Store of value: durable, scarce, fungible
+
+        One more property: acceptable
 
         Next: things we've used as money</div>
       </section>
@@ -86,6 +116,9 @@
             </tr>
             <tr>
               <th>Scarce</th><td class="no"></td>
+            </tr>
+            <tr>
+              <th>Acceptable</th><td class="maybe"></td>
             </tr>
           </tbody>
         </table>
@@ -113,6 +146,9 @@
             </tr>
             <tr>
               <th>Scarce</th><td class="yes"></td>
+            </tr>
+            <tr>
+              <th>Acceptable</th><td class="no"></td>
             </tr>
           </tbody>
         </table>
@@ -144,10 +180,13 @@
             <tr>
               <th>Scarce</th><td class="yes"></td>
             </tr>
+            <tr>
+              <th>Acceptable</th><td class="maybe"></td>
+            </tr>
           </tbody>
         </table>
         <div class="notes">
-          Gold (and silver).
+          Precious metals, gold and silver.
           Pretty popular.
           Still used today.</div>
       </section>
@@ -172,10 +211,13 @@
             <tr>
               <th>Scarce</th><td class="no"></td>
             </tr>
+            <tr>
+              <th>Acceptable</th><td class="yes"></td>
+            </tr>
           </tbody>
         </table>
-        <div class="notes">US dollars
-          Used to represent gold and silver, after World War 1 pretty much everybody decided to switch to unbacked "floating money" so they could fuel government expenses with inflation.</div>
+        <div class="notes">Cash
+          Used to represent gold and silver, after World War 2 pretty much everybody decided to switch to unbacked "floating money" so they could fuel government expenses with inflation.</div>
       </section>
 
       <section>
@@ -196,13 +238,17 @@
               <td><div janus-timeline janus-future="right" style="color: #F00;">&nbsp;- 15</div></td>
             </tr>
             <tr>
-              <th>Jack</th>
-              <td>12</td>
-              <td><div janus-timeline janus-future="right" style="color: #090;">&nbsp;+ 15</div></td>
+              <th>Tim</th>
+              <td>57</td>
             </tr>
             <tr>
               <th>Dave</th>
               <td>9</td>
+            </tr>
+            <tr>
+              <th>Jack</th>
+              <td>12</td>
+              <td><div janus-timeline janus-future="right" style="color: #090;">&nbsp;+ 15</div></td>
             </tr>
             <tr>
               <th>George</th>
@@ -249,6 +295,10 @@
               <td>9.7</td>
             </tr>
             <tr>
+              <th><code>8DCFD9B98C72B</code></th>
+              <td>57.0</td>
+            </tr>
+            <tr>
               <th><code>8DBDA78D8BEF2</code></th>
               <td>1.1</td>
             </tr>
@@ -267,10 +317,14 @@
       </section>
 
       <section>
-        <img src="styles/headstone.svg" style="height: 60vh; margin: 0.5em auto 0" alt="">
-        <img src="styles/grass-back.svg" style="position: absolute; z-index: -1; width: 100%; top: 60vh">
-        <img src="styles/grass-front.svg" style="position: absolute; width: 100%; top: 66vh">
-        <div class="notes">There's a company that actually did this, called DigiCash. they maintained a ledger with cryptographically controlled balances. Consumers weren't concerned enough about security or privacy and they ran out of money.</div>
+        <div class="cover" style="overflow: hidden;">
+          <img src="styles/headstone.svg" style="height: 60vh; margin: 0.5em auto 0" alt="">
+          <img src="styles/grass-back.svg" style="position: absolute; z-index: -1; width: 100%; top: 60vh">
+          <img src="styles/grass-front.svg" style="position: absolute; width: 100%; top: 66vh">
+        </div>
+        <div class="notes">There's a company that actually did this, called DigiCash. they maintained a ledger with cryptographically controlled balances. Consumers weren't concerned enough about security or privacy and they ran out of money.
+
+        Money that depends on a centralized provider can be fragile since there's a single point of failure.</div>
       </section>
 
       <section>
@@ -287,25 +341,43 @@
         <div class="notes">Real world, double spending is easy.
         Two checks
         First deposit "wins"
-        All about timing
+        All about timing</div>
+      </section>
 
-        How do you fix this?</div>
+      <section style="text-shadow: 0 0 2em black;">
+        <img src="styles/byzantine-fresca.jpg" alt="" class="cover">
+        <h2>the</h2>
+        <h1><em>Byzantine Generals&rsquo;</em></h1>
+        <h2>problem</h2>
+        <div class="notes">The Byzantine army is divided into groups, each group led by a general. But some of the generals are traitors. How can the loyal generals share one plan of attack, even in the presence of a small group of traitors?
+
+        This kind of "antifragile" consensus they are looking for is called "Byzantine consensus".</div>
       </section>
 
       <section>
         <img class="cover" src="styles/hashbrowns.jpg" alt="hashbrowns">
         <h1 style="color: black">Hashes</h1>
+        <div class="notes">Hashing is a <strong>one-way</strong> transformation of some arbitrary data into some random-seeming but bounded output.
+        We can get Byzantine consensus with creative use of hashes.</div>
       </section>
 
       <section>
-        <h1>Proof of Work</h1>
+        <img src="styles/envelopes.jpg" alt="" class="cover">
+        <h1 style="padding-top: 3em; text-shadow: 0 0 2em black">Proof of Work</h1>
+        <div class="notes">In 1997 this guy Adam Back came up with <em>HashCash</em>. The idea is that an email client would brute-force a certain amount of zeros as the output to a cryptographic hashing algorithm.</div>
       </section>
 
       <section class="hashpointers">
-        <img janus-timeline janus-future="big" src="styles/hashpointers-linked-list.svg" alt="" class="contain" style="object-position: 70% 50%">
+        <img src="styles/hashpointers-linked-list.svg" alt="" class="contain" style="object-position: 70% 50%">
         <img janus-timeline janus-future="big" src="styles/hashpointers-hashes.svg" alt="" class="contain" style="object-position: 70% 50%">
+        <h1 janus-timeline janus-future="left">Hash Pointers</h1>
         <img janus-timeline janus-future="left" src="styles/hashpointers-new-entry.svg" alt="" class="contain" style="object-position: 70% 50%">
-        <h1>Hash Pointers</h1>
+        <div class="notes">Good data structure for a log is a linked list. Blocks with lists of transactions, and each one points to the previous block. But we want this log to be tamper-proof.
+        Hash pointers can make it so that changes earlier in the chain affect every item after that.</div>
+      </section>
+
+      <section>
+
       </section>
 
       <section>
@@ -313,7 +385,46 @@
       </section>
 
       <section>
-        <h1>Currency</h1>
+        <h1>Money</h1>
+        <table class="yesnomaybe" style="margin: 0.5em auto 0; border: none">
+          <tbody>
+            <tr>
+              <th>Durable</th><td class="yes"></td>
+            </tr>
+            <tr>
+              <th>Portable</th><td class="yes"></td>
+            </tr>
+            <tr>
+              <th>Divisible</th><td class="yes"></td>
+            </tr>
+            <tr>
+              <th>Fungible</th><td class="maybe"></td>
+            </tr>
+            <tr>
+              <th>Scarce</th><td class="yes"></td>
+            </tr>
+            <tr>
+              <th>Acceptable</th><td class="maybe"></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="notes"></div>
+      </section>
+
+      <section>
+        <h1>Identity</h1>
+        <div class="notes">
+          payment information
+          usernames
+          DNS
+        </div>
+      </section>
+
+      <section>
+        <h1>Proof of Existence</h1>
+        <div class="notes">
+          embedding a hash in the blockchain demonstrates an item's existence at point in the past
+        </div>
       </section>
 
       <section>
@@ -321,31 +432,11 @@
       </section>
 
       <section>
-        <div class="notes">
-          payment information
-          usernames
-          DNS
-        </div>
-        <h1>Identity</h1>
-      </section>
-
-      <section>
-        <div class="notes">
-          embedding a hash in the blockchain demonstrates an item's existence at point in the past
-        </div>
-        <h1>Proof of Existence</h1>
-      </section>
-
-      <section>
-        <h1>Payment Infrastructure</h1>
-      </section>
-
-      <section>
+        <h1>Smart Contracts</h1>
         <div class="notes">
           DAO
           Ethereum/RootStock
         </div>
-        <h1>Smart Contracts</h1>
       </section>
 
       <section>

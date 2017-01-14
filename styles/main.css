@@ -415,6 +415,9 @@ section {
 [janus-timeline='past'] {
   transition: transform ease 0.5s, opacity ease 0.5s, visibility step-end 0.5s;
 }
+section[janus-timeline='present'] [janus-timeline='past']:not([janus-past]) {
+  transition: transform ease 0.5s, opacity ease 0.5s;
+}
 
 [janus-timeline='present'] {
   transition: transform ease 0.5s, opacity ease 0.5s, visibility step-start 0.5s;
