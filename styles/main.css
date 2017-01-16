@@ -438,6 +438,14 @@ body.show-notes section[janus-timeline='future'] [janus-timeline='future'] {
   opacity: 1;
 }
 
+body:not(.show-notes) [janus-timeline='past'][janus-past='up'], body:not(.show-notes) [janus-timeline='future'][janus-future='up'] {
+  transform: translate3d(0, -100vh, 0);
+  opacity: 1;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 2;
+}
+
 body:not(.show-notes) [janus-timeline='past'][janus-past='down'], body:not(.show-notes) [janus-timeline='future'][janus-future='down'] {
   transform: translate3d(0, 100vh, 0);
   opacity: 1;
