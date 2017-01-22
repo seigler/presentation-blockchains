@@ -17,7 +17,7 @@
 .highlighted {
   background-color: #FF0;
   color: black;
-  display: inline-block;
+  display: block;
   padding: 0.125em 0.25em;
   margin: 0.25em auto;
 }
@@ -43,4 +43,24 @@ table.yesnomaybe .no {
 }
 table.yesnomaybe .maybe {
   background-image: url(../libs/svg/2753.svg);
+}
+
+@keyframes vibrate {
+  0% { transform: translate3d(-0.03em, -0.03em, 0); }
+  25% { transform: translate3d(0.03em, 0em, 0); }
+  50% { transform: translate3d(-0.03em, 0.03em, 0); }
+  75% { transform: translate3d(0.03em, 0em, 0); }
+}
+
+.vibrate {
+  animation: 0.1s steps(4) 0s infinite alternate vibrate;
+}
+
+.coins {
+  margin-top: 0.5em;
+}
+
+.coins > img {
+  height: 1.5em;
+  width: auto;
 }
