@@ -532,15 +532,16 @@ body.show-notes section[janus-timeline='present'] {
 
 .notes {
   display: none;
+  box-sizing: border-box;
   white-space: pre-line;
   position: absolute;
-  top: 0.2rem;
+  top: 0;
   left: 100%;
   width: 33.33%;
   height: 100%;
   font-size: 0.5rem;
   text-align: left;
-  padding-left: 0.5em;
+  padding: 0.2em;
 }
 body.show-notes section[janus-timeline='present'] > .notes {
   display: block;
