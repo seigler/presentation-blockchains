@@ -60,7 +60,7 @@ table.yesnomaybe .maybe {
   margin-top: 0.5em;
 }
 
-.coins > img {
-  height: 1.5em;
-  width: auto;
+.coins > i {
+  display: inline-block;
+  font-size: 1.5em;
 }
