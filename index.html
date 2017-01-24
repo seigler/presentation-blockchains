@@ -214,11 +214,11 @@
 
       <section>
         <h1>How could we make<br><em>digital</em> currency?</h1>
-        <div class="cover" janus-timeline janus-future="down" janus-past="down">
-          <img src="styles/heath.png" alt="" style="position: absolute; height: 60vh; bottom: -5vh; right: 0; transform: rotate(-30deg)">
-        </div>
-        <div janus-timeline></div>
         <div class="notes">Digital items can be duplicated; how can I send you something the way I do in the physical world? The Yapanese people had the right idea: use a ledger.</div>
+      </section>
+
+      <section>
+        <img src="styles/heath.jpg" alt="" class="contain">
       </section>
 
       <section>
@@ -361,13 +361,15 @@
       </section>
 
       <section class="hashpointers">
-        <img src="styles/hashpointers-linked-list.svg" alt="" class="contain" style="object-position: 70% 50%">
-        <h2 janus-timeline style="color: #7f7fff">Hash Pointers</h2>
-        <img janus-timeline janus-future="big" src="styles/hashpointers-hashes.svg" alt="" class="contain" style="object-position: 70% 50%">
-        <h2 janus-timeline>+ <span style="color: #ff0">Proof of Work</span></h2>
-        <img janus-timeline janus-future="big" src="styles/hashpointers-proof-of-work.svg" alt="" class="contain" style="object-position: 70% 50%">
-        <img janus-timeline janus-future="left" src="styles/hashpointers-new-entry.svg" alt="" class="contain" style="object-position: 70% 50%">
-        <h2 janus-timeline>= Blockchain</h2>
+        <div class="cover" style="margin-left: -4vw;">
+          <img src="styles/hashpointers-linked-list.svg" alt="" class="contain" style="object-position: 50% 50%">
+          <h2 janus-timeline style="color: #1c75bc">Hash Pointers</h2>
+          <img janus-timeline janus-future="big" src="styles/hashpointers-hashes.svg" alt="" class="contain" style="object-position: 50% 50%">
+          <h2 janus-timeline>+ <span style="color: #F7931A">Proof of Work</span></h2>
+          <img janus-timeline janus-future="big" src="styles/hashpointers-proof-of-work.svg" alt="" class="contain" style="object-position: 50% 50%">
+          <img janus-timeline janus-future="left" src="styles/hashpointers-new-entry.svg" alt="" class="contain" style="object-position: 50% 50%">
+          <h2 janus-timeline>= Blockchain</h2>
+        </div>
         <div class="notes">A good structure for a ledger is a linked list: each block of transactions points to the previous block. But we want this log to be tamper-proof. Hash pointers can make it so that changes earlier in the chain affect every item after that. To change history, you have to redo all the work after that point. But new blocks are still being added.</div>
       </section>
 
