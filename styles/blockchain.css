@@ -15,7 +15,7 @@
 }
 
 .highlighted {
-  background-color: #FF0;
+  background-color: #f7931a;
   color: black;
   display: block;
   padding: 0.125em 0.25em;
@@ -62,5 +62,9 @@ table.yesnomaybe .maybe {
 
 .coins > i {
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 2em;
+}
+
+i.cc {
+  text-shadow: 0 0 2em black;
 }
