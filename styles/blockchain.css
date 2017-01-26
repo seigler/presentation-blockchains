@@ -1,3 +1,7 @@
+section {
+  text-shadow: 0.15rem 0.15rem 0.3rem black;
+}
+
 .title-page h1 {
   font-size: 2em;
   padding: 0.25em;
@@ -20,6 +24,7 @@
   display: block;
   padding: 0.125em 0.25em;
   margin: 0.25em auto;
+  text-shadow: none;
 }
 .highlighted:before {
   content: '';
