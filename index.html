@@ -52,44 +52,17 @@
       </section>
 
       <section>
-        <img src="styles/cat-money.jpg" alt="" class="cover">
+        <img src="styles/cat-money.jpg" alt="" class="cover" style="object-position: 65% 30%">
         <div class="cover" style="background-color: rgba(0, 0, 0, 0.6)">
           <h1 class="highlighted">What is money?</h1>
-          <!--
-<li>
-<ul janus-timeline janus-future="down">Durable</ul>
-<ul janus-timeline janus-future="down">Portable</ul>
-<ul janus-timeline janus-future="down">Fungible</ul>
-<ul janus-timeline janus-future="down">Divisible</ul>
-<ul janus-timeline janus-future="down">Scarce</ul>
-<ul janus-timeline janus-future="down">Acceptable</ul>
-</li>
--->
-          <!--
-<table class="yesnomaybe" style="font-size: 6vh; border-width: 1.5em 1em 0 0; margin: auto;">
-<thead>
-<tr>
-<th></th>
-<th><div>Durable</div></th>
-<th><div>Portable</div></th>
-<th><div>Divisible</div></th>
-<th><div>Fungible</div></th>
-<th><div>Scarce</div></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>Medium of<br>Exchange</th><td class="yes"></td><td class="yes"></td><td></td><td class="yes"></td><td></td>
-</tr>
-<tr>
-<th>Unit of<br>Account</th><td></td><td></td><td class="yes"></td><td class="yes"></td><td></td>
-</tr>
-<tr>
-<th>Store of<br>Value</th><td></td><td></td><td></td><td class="yes"></td><td class="yes"></td>
-</tr>
-</tbody>
-</table>
--->
+          <li>
+            <ul janus-timeline janus-future="down">Durable</ul>
+            <ul janus-timeline janus-future="down">Portable</ul>
+            <ul janus-timeline janus-future="down">Fungible</ul>
+            <ul janus-timeline janus-future="down">Divisible</ul>
+            <ul janus-timeline janus-future="down">Scarce</ul>
+            <ul janus-timeline janus-future="down">(Acceptable)</ul>
+          </li>
         </div>
         <div class="notes">
           <u>Medium of exchange:</u> portable, durable, fungible
@@ -217,12 +190,12 @@
         <div class="notes">Digital items can be duplicated; how can I send you something the way I do in the physical world? The people on the island of Yap had the right idea: use a ledger.</div>
       </section>
 
-      <section>
+      <section janus-past="flip-h">
         <img src="styles/heath.jpg" alt="" class="contain">
         <div class="notes">Sorry, wrong Ledger.</div>
       </section>
 
-      <section>
+      <section janus-future="flip-h">
         <table>
           <tbody style="text-align: right;">
             <tr>
@@ -258,7 +231,7 @@
 
       <section>
         <img src="styles/padlock.jpg" alt="" class="cover">
-        <h1 style="color: #f7931a; font-weight: 900; text-shadow: 0 0 2em black; -webkit-text-stroke: 0.025em white">Cryptography</h1>
+        <h1 class="highlighted">Cryptography</h1>
         <div class="notes">We can use public and private keys to control balances in an anonymous ledger.</div>
       </section>
 
@@ -323,9 +296,9 @@
         <h1>How to decentralize?</h1>
       </section>
 
-      <section janus-future="up" janus-past="up">
+      <section janus-future="up" janus-past="up" style="text-shadow: 0.1em 0.1em 0.2em black;">
         <img src="styles/oprah-giveaway.jpg" alt="" class="cover">
-        <h2>You get a ledger! You get a ledger!</h2>
+        <h2><em>You</em> get a ledger! <em>You</em> get a ledger!</h2>
         <h1>YOU ALL GET A LEDGER!!</h1>
         <div class="notes">Give <em>everyone</em> their own copy of the ledger. When you make a change to the ledger, send it out to everyone so all the ledgers stay up to date. Use cryptographic keys for privacy, and so that one person can't change another person's balance.</div>
       </section>
@@ -338,7 +311,7 @@
           Analogous problem:</div>
       </section>
 
-      <section style="text-shadow: 0 0 2em black;">
+      <section style="text-shadow: 0.1em 0.1em 0.2em black;">
         <img src="styles/byzantine-fresca.jpg" alt="" class="cover">
         <h2>the</h2>
         <h1><em>Byzantine Generals&rsquo;</em></h1>
@@ -356,8 +329,8 @@
       </section>
 
       <section>
-        <img src="styles/envelopes.jpg" alt="" class="cover">
-        <h1 style="padding-top: 3em; text-shadow: 0 0 2em black">Proof of Work</h1>
+        <img src="styles/coal-mining.jpg" alt="" class="cover" style="object-position: 50% 20%">
+        <h1 class="highlighted">Proof of Work</h1>
         <div class="notes">In 1997 this guy Adam Back came up with <em>HashCash</em>. The idea is that an email client would brute-force a certain amount of zeros as the output to a cryptographic hashing algorithm.</div>
       </section>
 
@@ -388,33 +361,41 @@
       </section>
 
       <section>
-        <h1 style="text-shadow: 0 0 2em black">Trusted Third Parties</h1>
+        <h1 style="text-shadow: 0.1em 0.1em 0.2em black">Trusted Third Parties</h1>
         <img janus-timeline janus-future="big" src="styles/no_sign.svg" alt="" class="contain">
       </section>
 
       <section>
+        <img src="styles/bank.jpg" alt="" class="cover">
+        <div class="cover" style="background-color: rgba(0,0,0,0.5)"></div>
         <h1>Central banks &amp;<br>payment services</h1>
         <div class="coins">
           <i class="cc BTC"></i>
           <i class="cc DASH"></i>
           <i class="cc XMR"></i>
           <i class="cc LTC"></i>
+          <i class="cc XRP"></i>
         </div>
         <div class="notes">Blockchains' value as money is at the heart of their incentives. Private blockchains that don't try to be money face serious challenges. The ability to transfer value globally without using or trusting a third party can save money and time, especially for traditionally burdensome cases like international remittance.</div>
       </section>
 
       <section>
+        <img src="styles/copyright-office.jpg" alt="" class="cover">
+        <div class="cover" style="background-color: rgba(0,0,0,0.5)"></div>
         <h1>Register of deeds,<br>copyright office</h1>
         <div class="coins">
           <i class="cc BTC"></i>
+          <i class="cc ETC"></i>
           <i class="cc FCT"></i>
           <i class="cc EMC"></i>
         </div>
         <div class="notes">Embedding a hash in the blockchain demonstrates an item's existence at point in the past.
-          (Bitcoin, Factoids, Emercoin)</div>
+          (Bitcoin [Stampery, others], Ethereum Classic [Stampery, others], Factoids, Emercoin)</div>
       </section>
 
       <section>
+        <img src="styles/clouds.jpg" alt="" class="cover">
+        <div class="cover" style="background-color: rgba(0,0,0,0.5)"></div>
         <h1>Cloud storage providers</h1>
         <div class="coins">
           <i class="cc MAID"></i>
@@ -426,6 +407,8 @@
       </section>
       
       <section>
+        <img src="styles/servers.jpg" alt="" class="cover">
+        <div class="cover" style="background-color: rgba(0,0,0,0.5)"></div>
         <h1>DNS providers</h1>
         <div class="coins">
           <i class="cc NMC"></i>
@@ -435,23 +418,30 @@
       </section>
       
       <section>
+        <img src="styles/user%20faces.png" alt="" class="contain">
+        <div class="cover" style="background-color: rgba(0,0,0,0.5)"></div>
         <h1>Social networks</h1>
         <div class="coins">
           <i class="cc STEEM"></i>
-          <i class="cc SYN"></i>
+          <i class="cc AMP"></i>
+          <i class="cc ETH"></i>
         </div>
-        <div class="notes">(Steem, Synereo)</div>
+        <div class="notes">(Steem, Synereo, Akasha [using Ethereum])</div>
       </section>
       
       <section>
+        <img src="styles/music.jpg" alt="" class="cover">
+        <div class="cover" style="background-color: rgba(0,0,0,0.5)"></div>
         <h1>Media rights &amp;<br>compensation</h1>
         <div class="coins">
-          <i class="cc ETC"></i>
+          <i class="cc ETC"></i> <i class="cc LBC"></i>
         </div>
-        <div class="notes">Ethereum classic</div>
+        <div class="notes">(UJO Music using Ethereum, LBRY)</div>
       </section>
       
       <section>
+        <img src="styles/fingerprint.jpg" alt="" class="cover">
+        <div class="cover" style="background-color: rgba(0,0,0,0.5)"></div>
         <h1>Identity providers</h1>
         <div class="coins">
           <i class="cc BTC"></i>
@@ -487,6 +477,9 @@
           <li><a href="https://www.flickr.com/photos/106853342@N04/10721964235"><img src="styles/shell-money.jpg" alt="" class="thumbnail">Australian DFAT photo library, Flickr</a></li>
           <li><a href="https://www.flickr.com/photos/ammichaels/7159593410"><img src="styles/hashbrowns.jpg" alt="" class="thumbnail">based on image by cheeseslave, Flickr</a></li>
           <li><a href="https://www.flickr.com/photos/43896901@N00/6102490914"><img src="styles/gold-panning.jpg" alt="" class="thumbnail">Jean-François Gornet, Flickr</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Second_Bank_of_the_United_States_South_side.jpg"><img src="styles/bank.jpg" alt="" class="thumbnail">Wikimedia Commons</a></li>
+          <li><a href="https://www.flickr.com/photos/28581681@N04/4256458866"><img src="styles/clouds.jpg" alt="" class="thumbnail">leolintang, Flickr</a></li>
+          <li>Public domain images from <a href="https://pixabay.com">Pixabay</a> and <a href="https://commons.wikimedia.org/wiki/Main_Page">Wikimedia Commons</a></li>
           <li>Emoji art supplied by <a href="http://emojione.com/">EmojiOne</a></li>
           <li>Cryptocurrency icons by <a href="http://labs.allienworks.net/icons/cryptocoins/">Allienworks</a></li>
         </ul>

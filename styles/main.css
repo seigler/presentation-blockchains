@@ -286,6 +286,7 @@ section {
   background-color: black;
   transition: transform ease 0.5s, opacity ease 0.5s, visibility step-end 0.5s;
   transform-origin: 50% 50%;
+  perspective: 100vmax;
 }
 
 /* live-coding */
@@ -468,6 +469,17 @@ body:not(.show-notes) [janus-timeline='past'][janus-past='right'], body:not(.sho
   visibility: hidden;
   pointer-events: none;
   z-index: 2;
+}
+
+body:not(.show-notes) [janus-timeline='past'][janus-past='flip-h'], body:not(.show-notes) [janus-timeline='future'][janus-future='flip-h'] {
+  transform: translate3d(0, 0, -10vmin) rotateY(-180deg);
+  opacity: 1;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 2;
+}
+body:not(.show-notes) [janus-timeline='future'][janus-future='flip-h'] {
+  transform: translate3d(0, 0, -10vmin) rotateY(180deg);
 }
 
 section[janus-timeline='past'], /* default past-tense state */
