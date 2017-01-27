@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Tech Talk: Blockchain</title>
+    <link rel="stylesheet" href="styles/fonts/merriweather/font.css" charset="utf-8">
     <link rel="stylesheet" href="styles/main.css" charset="utf-8">
     <link rel="stylesheet" href="styles/blockchain.css" charset="utf-8">
     <link rel="stylesheet" href="libs/cryptoicons/cryptocoins.css" charset="utf-8">
@@ -182,7 +183,8 @@
         </table>
         <div class="notes">Cash
           Used to represent gold and silver.
-          Starting with FDR's <em>New Deal</em> in 1933 and ending with <em>Nixon Shock</em> in 1971, the US (and practically everyone else) switched to unbacked "floating money" to take more direct control of national markets.</div>
+          Starting with FDR's <em>New Deal</em> in 1933 and ending with <em>Nixon Shock</em> in 1971, the US (and practically everyone else) switched to unbacked "floating money" to take more direct control of national markets.
+          As a result, cash is not scarce.</div>
       </section>
 
       <section>
@@ -296,7 +298,7 @@
         <h1>How to decentralize?</h1>
       </section>
 
-      <section janus-future="up" janus-past="up" class="shadow">
+      <section janus-future="up" janus-past="up">
         <img src="styles/oprah-giveaway.jpg" alt="" class="cover">
         <h2><em>You</em> get a ledger! <em>You</em> get a ledger!</h2>
         <h1>YOU ALL GET A LEDGER!!</h1>
@@ -311,7 +313,7 @@
           Analogous problem:</div>
       </section>
 
-      <section class="shadow">
+      <section>
         <img src="styles/byzantine-fresca.jpg" alt="" class="cover">
         <h2>the</h2>
         <h1><em>Byzantine Generals&rsquo;</em></h1>
@@ -331,7 +333,7 @@
       <section>
         <img src="styles/coal-mining.jpg" alt="" class="cover" style="object-position: 50% 20%">
         <h1 class="highlighted">Proof of Work</h1>
-        <div class="notes">In 1997 this guy Adam Back came up with <em>HashCash</em>. The idea is that an email client would brute-force a certain amount of zeros as the output to a cryptographic hashing algorithm.</div>
+        <div class="notes">In 1997 this guy Adam Back came up with <em>HashCash</em>. The idea is that an email client would brute-force a certain amount of zeros as the output to a cryptographic hashing algorithm. Also known as a "puzzle".</div>
       </section>
 
       <section class="hashpointers">
@@ -361,11 +363,11 @@
       </section>
 
       <section>
-        <h1 class="shadow">Trusted Third Parties</h1>
+        <h1>Trusted Third Parties</h1>
         <img janus-timeline janus-future="big" src="styles/no_sign.svg" alt="" class="contain">
       </section>
 
-      <section class="shadow">
+      <section>
         <img src="styles/bank.jpg" alt="" class="cover">
         <div class="cover" style="background-color: rgba(0,0,0,0.5)"></div>
         <h1>Central banks &amp;<br>payment services</h1>
@@ -380,7 +382,7 @@
         (Bitcoin, Dash, Monero, Litecoin, Ripple)</div>
       </section>
 
-      <section class="shadow">
+      <section>
         <img src="styles/copyright-office.jpg" alt="" class="cover">
         <div class="cover" style="background-color: rgba(0,0,0,0.5)"></div>
         <h1>Register of deeds,<br>copyright office,<br>notary</h1>
@@ -394,7 +396,7 @@
           (Stampery [using Bitcoin and Ethereum Classic], Factoids, Emercoin)</div>
       </section>
 
-      <section class="shadow">
+      <section>
         <img src="styles/clouds.jpg" alt="" class="cover">
         <div class="cover" style="background-color: rgba(0,0,0,0.5)"></div>
         <h1>Cloud storage providers</h1>
@@ -409,7 +411,7 @@
           (Storj, Maidsafe, SIAcoin, NXT)</div>
       </section>
       
-      <section class="shadow">
+      <section>
         <img src="styles/servers.jpg" alt="" class="cover">
         <div class="cover" style="background-color: rgba(0,0,0,0.5)"></div>
         <h1>DNS providers</h1>
@@ -420,8 +422,8 @@
         <div class="notes">(Namecoin, Emercoin)</div>
       </section>
       
-      <section class="shadow">
-        <img src="styles/user%20faces.png" alt="" class="contain">
+      <section>
+        <img src="styles/user faces.png" alt="" class="contain">
         <div class="cover" style="background-color: rgba(0,0,0,0.5)"></div>
         <h1>Social networks</h1>
         <div class="coins">
@@ -432,7 +434,7 @@
         <div class="notes">(Steem, Synereo, Akasha [using Ethereum])</div>
       </section>
       
-      <section class="shadow">
+      <section>
         <img src="styles/music.jpg" alt="" class="cover">
         <div class="cover" style="background-color: rgba(0,0,0,0.5)"></div>
         <h1>Media rights &amp;<br>compensation</h1>
@@ -442,7 +444,7 @@
         <div class="notes">(UJO Music using Ethereum, LBRY)</div>
       </section>
       
-      <section class="shadow">
+      <section>
         <img src="styles/fingerprint.jpg" alt="" class="cover">
         <div class="cover" style="background-color: rgba(0,0,0,0.5)"></div>
         <h1>Identity providers</h1>
@@ -451,17 +453,29 @@
           <i class="cc NMC"></i>
           <i class="cc DASH"></i>
         </div>
+        <div class="notes">(Blockstack using Bitcoin, Namecoin, Dash [upcoming])</div>
       </section>
       
-      <section class="shadow">
+      <section>
         <img src="styles/certificate.svg" alt="" class="contain">
         <div class="cover" style="background-color: rgba(0,0,0,0.5)"></div>
         <h1>SSL certificate authorities</h1>
         <div class="coins">
           <i class="cc NMC"></i>
-          <i class="cc ETH"></i>
           <i class="cc EMC"></i>
+          <i class="cc ETH"></i>
         </div>
+        <div class="notes">CAs are a great example of a TTP with perverse incentives. Ripe for disruption.
+        (Namecoin, Emercoin, Ethereum)</div>
+      </section>
+
+      <section>
+        <div class="notes">Applications for businesses:
+        Look for places where we depend on a trusted third party, or where we operate as a trusted third party. These are areas that could be disrupted with blockchain technology, if conditions are right.</div>
+      </section>
+
+      <section>
+        <h1>Questions?</h1>
       </section>
 
       <section>

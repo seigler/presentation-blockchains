@@ -1,7 +1,5 @@
 /* Basics */
 
-@import url(./fonts/merriweather/font.css);
-
 *, *:before, *:after {
   box-sizing: inherit;
   margin: 0;

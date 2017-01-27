@@ -1,5 +1,6 @@
 section {
   text-shadow: 0.15rem 0.15rem 0.3rem black;
+  border-radius: 5vh;
 }
 
 .title-page h1 {

@@ -4,7 +4,7 @@
   "description": "This is a browser-based presentation framework with two connected views: one for the presenter, and one for the audience.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "inliner index.html > presentation-bundle.html",
+    "build": "inliner -n index.html > build/index.html",
     "start": "http-server -o -cors"
   },
   "repository": {
