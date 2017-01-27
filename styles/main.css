@@ -530,31 +530,36 @@ body.show-notes {
   background-color: #333;
 }
 
-body.show-notes section {
+body.show-notes section, body.show-notes section * {
   transition: none;
-}
-
-body.show-notes section[janus-timeline='present'] {
-  transform: scale(0.75);
-  transform-origin: 0% 0%;
-  overflow: visible;
 }
 
 .notes {
   display: none;
+  background-color: #333;
   box-sizing: border-box;
   white-space: pre-line;
   position: absolute;
   top: 0;
-  left: 100%;
-  width: 33.33%;
-  height: 100%;
-  font-size: 0.5rem;
+  left: -300%;
+  width: 300%;
+  height: 400%;
+  font-size: 3rem;
   text-align: left;
   padding: 0.2em;
 }
 body.show-notes section[janus-timeline='present'] > .notes {
   display: block;
+}
+
+body.show-notes section[janus-timeline='present'] {
+  transform: scale(0.25);
+  transform-origin: top right;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  overflow: visible;
 }
 
 body.show-notes section[janus-timeline='present'] + section[janus-timeline='future'] {
@@ -566,6 +571,5 @@ body.show-notes section[janus-timeline='present'] + section[janus-timeline='futu
   right: 0;
   opacity: 1;
   visibility: visible;
-  outline: 0.2rem solid white;
   z-index: 3;
 }
